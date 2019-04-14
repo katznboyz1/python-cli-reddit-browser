@@ -1,6 +1,6 @@
 import os
 os.chdir('./commands') #set the directory to the commands folder
-pythonName = str(input('What is the name of your python command (py.exe, py, python, python3, [...]): ')) #check what python they are using
+pythonName = str(open('../manifest.txt').read()).split('\n')[0].split('=')[1]
 print ('Type "help.py" for a full list of commands and other help info.')
 while (True):
     command = str(input('\nReddit CLI Browser> ')) #command input
