@@ -1,0 +1,5 @@
+print ('Python CLI Reddit Browser Command Menu:\n')
+print ('All commands must end with the proper file extension or else they will not run. For example, to run the help command, you can do "./help.py" or "help.py".\n')
+print ('Commands:\n')
+print ('help.py - Prints a list of commands for the browser.')
+print ('getImageFromUrl.py - Prints the image out in the command line.')
