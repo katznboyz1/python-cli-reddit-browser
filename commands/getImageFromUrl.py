@@ -1,4 +1,4 @@
-import argparse, urllib.request
+import argparse, urllib.request, os
 
 parser = argparse.ArgumentParser(description = 'A command to convert online images into text.')
 
@@ -15,4 +15,10 @@ if (args.scale):
 
 pythonName = str(open('../manifest.txt').read()).split('\n')[0].split('=')[1]
 
-os.system('{} >> ../cache/out.txt'.format(pythonName))
+imageFilePath = '../cache/tmpImage1.' + args.url.split('.')[-1]
+
+urllib.request.urlretrieve(url, imageFilePath)
+
+os.system('{} imageToText.py --file {} --scale {} --out ../cache/asciiImageOutput.txt >> ../cache/out.txt'.format(pythonName, imageFilePath, scale))
+
+print (str(open('../cache/asciiImageOutput.txt').read()))
