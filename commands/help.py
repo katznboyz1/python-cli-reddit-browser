@@ -3,3 +3,4 @@ print ('All commands must end with the proper file extension or else they will n
 print ('Commands:\n')
 print ('help.py - Prints a list of commands for the browser.')
 print ('getImageFromUrl.py - Prints the image out in the command line. This function isnt fully functional and will be improved on later.')
+print ('getRedditPostLinks.py - Returns a list of reddit post links from a specific page.')
