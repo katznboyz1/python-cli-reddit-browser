@@ -1,0 +1,1 @@
+This is the file where stdout will be redirected.
