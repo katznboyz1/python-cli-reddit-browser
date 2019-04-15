@@ -21,7 +21,7 @@ if (args.after):
 try:
     redditData = urllib.request.urlopen('https://www.reddit.com/r/{}/.json?limit={}&after={}'.format(subreddit, limit, after))
 except urllib.error.HTTPError as err:
-    print ('429 HTTP Error, try waiting for a little bit and then using this command again.')
+    print ('429 HTTP Error, try waiting for a little bit and then using this command again. Usually you can just wait three seconds and then it will work again.')
     exit()
 
 redditData = json.loads(redditData.read().decode())
