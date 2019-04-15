@@ -2,8 +2,6 @@
 This is a command line tool that lets you browse reddit. It does not support color yet but it will soon.
 This can be used for browsing reddit in command line only computers or you can use it at work without raising any of the eyebrows that the website raises since the command line tool looks makes it look like you are doing work.
 
-# PLEASE READ THESE INSTRUCTIONS, IF YOU RAISE AN ISSUE THAT CAN BE SOLVED BY USING THESE INSTRUCTIONS THEN I WILL CALL YOU A PEBBLE AND THEN I WILL JUST TELL YOU TO READ THESE INSTRUCTIONS. Thank you!
-
 **Instructions:**
 1:
 You should edit the python name in the file */manifest.tx*. This will be used to run the programs.
