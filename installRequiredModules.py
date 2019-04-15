@@ -1,3 +1,4 @@
+#made by katznboyz/katznboyz1
 #python script made for autoinstalling all the required packages for the reddit browser
 import os
 pythonPath = str(open('./manifest.txt').read()).split('\n')[0].split('=')[1]

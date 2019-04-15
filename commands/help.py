@@ -1,3 +1,4 @@
+#made by katznboyz/katznboyz1
 print ('Python CLI Reddit Browser Command Menu:\n')
 print ('All commands must end with the proper file extension or else they will not run. For example, to run the help command, you can do "help.py".\n')
 print ('Commands:\n')

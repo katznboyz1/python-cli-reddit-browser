@@ -1,3 +1,4 @@
+#made by katznboyz/katznboyz1
 import argparse, urllib.request, os
 
 parser = argparse.ArgumentParser(description = 'A command to convert online images into text.')

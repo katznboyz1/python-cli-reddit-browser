@@ -1,3 +1,4 @@
+#made by katznboyz/katznboyz1
 #make it so that it can get posts after a certain amount
 
 import argparse, urllib.request, json, urllib

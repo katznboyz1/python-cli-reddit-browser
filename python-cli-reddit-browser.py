@@ -1,3 +1,4 @@
+#made by katznboyz/katznboyz1
 import os, colorama
 os.chdir('./commands') #set the directory to the commands folder
 pythonName = str(open('../manifest.txt').read()).split('\n')[0].split('=')[1]

@@ -1,3 +1,4 @@
+#made by katznboyz/katznboyz1
 import argparse, urllib.request, json, os
 
 pythonName = str(open('../manifest.txt').read()).split('\n')[0].split('=')[1]
