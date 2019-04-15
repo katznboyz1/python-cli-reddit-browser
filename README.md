@@ -6,7 +6,7 @@ This can be used for browsing reddit in command line only computers or you can u
 1:
 You should edit the python name in the file */manifest.tx*. This will be used to run the programs.
 This can be done by opening the file and then changing the value that comes after "*pythonname=*". EX: "*pythonname=py.exe*" or "*pythonname=python3*".
-If you run the program and then get an error such as "*sh: 1: PROGRAMNAME: not found*" or "*'abcd' is not recognized as an internal or external command, operable program or batch file.*" that is because you did not correctly fix that line. It is set to "*python*" as a default, however you should set it to whatever program you use to run your python scripts.
+If you run the program and then get an error such as "*sh: 1: PROGRAMNAME: not found*" or "*'PROGRAMNAME' is not recognized as an internal or external command, operable program or batch file.*" that is because you did not correctly fix that line. It is set to "*python*" as a default, however you should set it to whatever program you use to run your python scripts.
 2:
 Run the program */installRequiredModules.py*. This will install all the needed packages for this program so that you dont have to go through that mess.
 3:
