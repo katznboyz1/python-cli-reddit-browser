@@ -32,7 +32,7 @@ print ('------------------------------------------------------------------------
 
 print ('Showing {} posts from r/{}:'.format(str(int(limit) + 1), subreddit))
 
-for post in range(int(limit + 1)):
+for post in range(len(redditData)):
     title = redditData[post]['data']['title']
     url = redditData[post]['data']['permalink']
     upvotes = redditData[post]['data']['score']
