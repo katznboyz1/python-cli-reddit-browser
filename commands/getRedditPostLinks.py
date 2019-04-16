@@ -8,6 +8,7 @@ parser = argparse.ArgumentParser(description = 'A program that will get a list o
 parser.add_argument('--subreddit', dest = 'subreddit', required = True)
 parser.add_argument('--limit', dest = 'limit', required = False)
 parser.add_argument('--after', dest = 'after', required = False)
+parser.add_argument('--sortby', dest = 'sortby', required = False)
 
 args = parser.parse_args()
 
@@ -18,9 +19,15 @@ if (args.limit):
 after = 0
 if (args.after):
     after = args.after
+sortby = 'new'
+if (args.sortby):
+    if (args.sortby.lower() in ['new', 'hot', 'rising', 'top', 'controversial']):
+        sortby = args.sortby
+    else:
+        print ('--sortby must be one of the following values: new, hot, rising, top, controversial')
 
 try:
-    redditData = urllib.request.urlopen('https://www.reddit.com/r/{}/.json?limit={}&after={}'.format(subreddit, limit, after))
+    redditData = urllib.request.urlopen('https://www.reddit.com/r/{}/{}/.json?limit={}&after={}'.format(subreddit, sortby, limit, after))
 except urllib.error.HTTPError as err:
     print ('429 HTTP Error, try waiting for a little bit and then using this command again. Usually you can just wait three seconds and then it will work again.')
     exit()
